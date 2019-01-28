@@ -10,7 +10,7 @@ import android.widget.TextView;
 public class MainActivity  extends Activity implements View.OnTouchListener {
 
     final static float STEP = 200;
-    TextView mytv;
+    TextView mytv,mytv2;
     float mRatio = 1.0f;
     int mBaseDist;
     float mBaseRatio;
@@ -22,6 +22,8 @@ public class MainActivity  extends Activity implements View.OnTouchListener {
 
         mytv = (TextView) findViewById(R.id.mytv);
         mytv.setTextSize(mRatio + 13);
+        mytv2 = (TextView) findViewById(R.id.mytv2);
+        mytv2.setTextSize(mRatio + 13);
     }
 
     public boolean onTouchEvent(MotionEvent event) {
@@ -36,6 +38,7 @@ public class MainActivity  extends Activity implements View.OnTouchListener {
                 float multi = (float) Math.pow(2, delta);
                 mRatio = Math.min(1024.0f, Math.max(0.1f, mBaseRatio * multi));
                 mytv.setTextSize(mRatio + 13);
+                mytv2.setTextSize(mRatio + 13);
             }
         }
         return true;

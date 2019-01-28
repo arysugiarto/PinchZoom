@@ -12,4 +12,13 @@
         android:layout_alignParentTop="true"
         android:text="This is my sample text for pinch zoom demo, you can zoom in and out using pinch zoom, thanks" />
 
+    <TextView
+        android:id="@+id/mytv2"
+        android:layout_alignBottom="@+id/mytv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Bapuk jasa" />
+
 </RelativeLayout>
